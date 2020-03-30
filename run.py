@@ -63,13 +63,7 @@ def cuaternion_conjugado(q):
 
 def residuos_cuadraticos(lista_puntos_ref, lista_puntos_inp):
     """Devuelve un array con los residuos cuadráticos del ajuste."""
-    residuos = []
-    for p1, p2 in zip(lista_puntos_ref, lista_puntos_inp):
-        p1 = np.asarray(p1, dtype='float')
-        p2 = np.asarray(p2, dtype='float')
-        residuos.append(np.sqrt(np.sum(np.power(p1-p2, 2))))
-    residuos_cuadraticos = np.power(residuos, 2)
-    return residuos_cuadraticos
+    raise NotImplementedError
 
 
 def main():
