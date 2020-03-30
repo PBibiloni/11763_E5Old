@@ -152,13 +152,12 @@ def main():
     #   los puntos de interés incluso sin hacer alguna de las dos rotaciones?
 
     def funcion_a_minimizar_v2(parametros_v2):
-        parametros_v2 = np.concatenate([parametros_v2, [0, 0, 0]])
-        landmarks_inp_transf = [transformacion_rigida_3D(landmark, parametros_v2) for landmark in landmarks_inp]
-        # Debe devolver una array 1-dimensional con los errores cuadráticos medios.
-        return residuos_cuadraticos(landmarks_ref, landmarks_inp_transf)
+        return None
+
+    parametros_iniciales_v2 = None
 
     resultado = least_squares(funcion_a_minimizar_v2,
-                              x0=parametros_iniciales[0:7],
+                              x0=parametros_iniciales_v2,
                               verbose=1)
     x_opt = resultado.x
     print(f'''
