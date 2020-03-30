@@ -38,19 +38,12 @@ def transformacion_rigida_3D(punto, parametros):
 
 def multiplicar_quaterniones(q1, q2):
     """Multiplica cuaterniones expresados como (1, i, j, k)."""
-    return (
-        q1[0] * q2[0] - q1[1] * q2[1] - q1[2] * q2[2] - q1[3] * q2[3],
-        q1[0] * q2[1] + q1[1] * q2[0] + q1[2] * q2[3] - q1[3] * q2[2],
-        q1[0] * q2[2] - q1[1] * q2[3] + q1[2] * q2[0] + q1[3] * q2[1],
-        q1[0] * q2[3] + q1[1] * q2[2] - q1[2] * q2[1] + q1[3] * q2[0]
-    )
+    return None
 
 
 def cuaternion_conjugado(q):
     """Conjuga un cuaternión expresado como (1, i, j, k)."""
-    return (
-        q[0], -q[1], -q[2], -q[3]
-    )
+    return None
 
 
 def residuos_cuadraticos(lista_puntos_ref, lista_puntos_inp):
