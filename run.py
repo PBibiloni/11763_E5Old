@@ -133,9 +133,8 @@ def main():
     #   Mediante minimizar una función objetivo mediante un algoritmo de resolución de mínimos cuadrados
 
     def funcion_a_minimizar(parametros):
-        landmarks_inp_transf = [transformacion_rigida_3D(landmark, parametros) for landmark in landmarks_inp]
         # Debe devolver una array 1-dimensional con los errores cuadráticos medios.
-        return residuos_cuadraticos(landmarks_ref, landmarks_inp_transf)
+        return None
 
     resultado = least_squares(funcion_a_minimizar,
                               x0=parametros_iniciales,
