@@ -17,17 +17,9 @@ def rotacion_axial(punto, angulo_en_radianes, eje_traslacion):
     #   Vamos a normalizarlo para evitar introducir restricciones en el optimizador
     v_norm = math.sqrt(sum([coord ** 2 for coord in [v_1, v_2, v_3]]))
     v_1, v_2, v_3 = v_1 / v_norm, v_2 / v_norm, v_3 / v_norm
-    #   Calcula cuaternión del punto
-    p = (0, x, y, z)
-    #   Calcula cuaternión de la rotación
-    cos, sin = math.cos(angulo_en_radianes / 2), math.sin(angulo_en_radianes / 2)
-    q = (cos, sin * v_1, sin * v_2, sin * v_3)
-    #   Calcula el conjugado
-    q_conjugado = (cos, -sin * v_1, -sin * v_2, -sin * v_3)
-    #   Calcula el cuaternión correspondiente al punto rotado
-    p_prima = multiplicar_quaterniones(q, multiplicar_quaterniones(p, q_conjugado))
-    # Devuelve el punto rotado
-    punto_transformado = p_prima[1], p_prima[2], p_prima[3]
+    # Introduce aquí el código necesario
+    # ...
+    punto_transformado = None, None, None
     return punto_transformado
 
 
