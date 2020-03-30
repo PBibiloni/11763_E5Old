@@ -117,10 +117,8 @@ def main():
     parametros_iniciales = [0, 0, 0,
                             0, 1, 0, 0,     # Inicializamos el eje de la rotacion a un vector unitario
                             0, 0, 0]
-    for i in range(3):
-        centroide_ref = sum([punto[i] for punto in landmarks_ref])/len(landmarks_ref)
-        centroide_inp = sum([punto[i] for punto in landmarks_inp])/len(landmarks_inp)
-        parametros_iniciales[i] = centroide_ref - centroide_inp     # ¿Por qué esta diferencia?
+    # Añade código para modificar los parámetros iniciales aquí:
+    # parametros_iniciales = ... ?
 
     landmarks_inp_transf = [transformacion_rigida_3D(l, parametros_iniciales) for l in landmarks_inp]
     residuos = residuos_cuadraticos(landmarks_ref, landmarks_inp_transf)
