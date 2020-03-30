@@ -7,7 +7,7 @@ Se plantean los siguientes objetivos:
     * Multiplicación de cuaterniones
     * Cálculo de rotaciones axiales mediante su expresión en cuaterniones
 3. Corregistro mediante landmarks: supongamos que en dos imágenes, hemos manualmente localizado unos puntos de interés. Buscaremos el ajuste que *mejor* envía los puntos de interés de una a la otra.
-    * Calcular los errores cuadráticos medios
+    * Calcular los residuos cuadráticos y el error cuadrático medio
     * Encontrar una inicialización
     * Encontrar una buena transformación rígida (¿la mejor?)
     * Estudiar si nuestra representación contiene parámetros redundantes
