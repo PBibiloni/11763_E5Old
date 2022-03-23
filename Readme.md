@@ -1,4 +1,4 @@
-# 11763 Procesamiento de Imagen Médica - Ejercicio 5
+# 11763 Procesamiento de Imagen Médica - Ejercicio 6
 
 Se plantean los siguientes objetivos:
 
